@@ -78,3 +78,5 @@ sudo systemctl restart mariadb
 sudo yum install jemalloc -y
 
 sudo systemctl restart mariadb
+
+UPDATE wp_options SET option_value = "stack-lb1-1008857025.us-east-1.elb.amazonaws.com" WHERE option_value LIKE 'http%';
